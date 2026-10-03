@@ -1,0 +1,1 @@
+{"expo":{"name":"EventConnect","slug":"eventconnect","version":"1.0.0","orientation":"portrait","userInterfaceStyle":"light","splash":{"backgroundColor":"#f5f8fc"},"android":{"package":"com.eventconnect.app","adaptiveIcon":{"backgroundColor":"#155eef"}},"extra":{"apiUrl":"http://10.0.2.2:4000"}}}
