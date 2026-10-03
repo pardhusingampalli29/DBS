@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - EventEase</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="dashboard">
+  <div id="navbar"></div>
+  <main class="container">
+    <div id="msg"></div>
+    <h1 id="welcome">Welcome</h1>
+    <p class="sub">Here is a quick look at your events.</p>
+
+    <div class="grid-stats">
+      <div class="card stat"><div class="num" id="stat-registered">0</div><div class="label">Registered Events</div></div>
+      <div class="card stat"><div class="num" id="stat-sessions">0</div><div class="label">Upcoming Sessions</div></div>
+      <div class="card stat"><div class="num" id="stat-checkedin">0</div><div class="label">Checked-in Events</div></div>
+      <div class="card stat"><div class="num" id="stat-feedback">0</div><div class="label">Feedback Given</div></div>
+    </div>
+
+    <h2>Quick actions</h2>
+    <div class="quick-actions">
+      <a class="btn" href="events.html">Browse Events</a>
+      <a class="btn" href="my-events.html">My Events</a>
+      <a class="btn" href="checkin.html">Check-in</a>
+      <a class="btn" href="feedback.html">Give Feedback</a>
+      <a class="btn btn-outline" href="schedule.html">My Schedule</a>
+    </div>
+
+    <div class="two-col">
+      <div>
+        <h2>My upcoming events</h2>
+        <div class="card" id="upcomingList">Loading...</div>
+      </div>
+      <div>
+        <h2>Recent notifications</h2>
+        <div class="card" id="notificationList">Loading...</div>
+        <p style="margin-top:10px"><button class="btn btn-outline btn-small" id="toggleNotes" onclick="toggleNotifications()">Show all notifications</button></p>
+      </div>
+    </div>
+  </main>
+  <div id="footer"></div>
+  <script src="js/main.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

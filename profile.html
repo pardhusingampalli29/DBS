@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile - EventEase</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="profile">
+  <div id="navbar"></div>
+  <main class="container">
+    <div id="msg"></div>
+    <h1>My Profile</h1>
+    <p class="sub">Role: <strong id="pRole"></strong> | Member since <strong id="pSince"></strong></p>
+    <div class="card form-card" style="margin-left:0">
+      <form id="profileForm">
+        <label for="pName">Full name</label>
+        <input id="pName" type="text" required maxlength="100">
+        <label for="pEmail">Email (cannot be changed)</label>
+        <input id="pEmail" type="email" disabled>
+        <label for="pPhone">Phone (10 digits)</label>
+        <input id="pPhone" type="tel" pattern="[0-9]{10}" maxlength="10">
+        <label for="pPassword">New password (leave empty to keep the old one)</label>
+        <input id="pPassword" type="password" minlength="6">
+        <button class="btn" type="submit">Save changes</button>
+      </form>
+    </div>
+  </main>
+  <div id="footer"></div>
+  <script src="js/main.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

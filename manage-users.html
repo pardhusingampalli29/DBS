@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Users - EventEase</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="manage-users">
+  <div id="navbar"></div>
+  <main class="container">
+    <div id="msg"></div>
+    <h1>Manage Users</h1>
+    <p style="margin-bottom:16px"><a class="btn btn-outline btn-small" href="admin-dashboard.html">Dashboard</a> <a class="btn btn-outline btn-small" href="manage-events.html">Events</a> <a class="btn btn-outline btn-small" href="manage-sessions.html">Sessions</a> <a class="btn btn-outline btn-small" href="manage-users.html">Users</a> <a class="btn btn-outline btn-small" href="registrations.html">Registrations</a> <a class="btn btn-outline btn-small" href="reports.html">Reports</a></p>
+    <div class="card form-card wide" id="userFormCard" style="margin-left:0;display:none">
+      <h2 style="margin-top:0">Edit user</h2>
+      <form id="userForm">
+        <input type="hidden" id="userId">
+        <div class="form-row">
+          <div><label for="uName">Name</label><input id="uName" required maxlength="100"></div>
+          <div><label for="uEmail">Email</label><input id="uEmail" disabled></div>
+        </div>
+        <div class="form-row">
+          <div><label for="uPhone">Phone</label><input id="uPhone" pattern="[0-9]{10}" maxlength="10"></div>
+          <div><label for="uRole">Role</label><select id="uRole"><option value="attendee">attendee</option><option value="admin">admin</option></select></div>
+        </div>
+        <button class="btn" type="submit">Save user</button>
+        <button class="btn btn-outline" type="button" id="cancelEdit">Cancel</button>
+      </form>
+    </div>
+    <h2>All users</h2>
+    <div id="userTable"></div>
+  </main>
+  <div id="footer"></div>
+  <script src="js/main.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browse Events - EventEase</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="events">
+  <div id="navbar"></div>
+  <main class="container">
+    <div id="msg"></div>
+    <h1>Browse Events</h1>
+    <p class="sub">Search by name or use the filters to find the right event.</p>
+    <div class="filters">
+      <div><label for="searchBox">Search</label><input id="searchBox" type="text" placeholder="Search events..."></div>
+      <div><label for="categoryFilter">Category</label><select id="categoryFilter"><option value="">All categories</option></select></div>
+      <div><label for="dateFilter">Date</label><input id="dateFilter" type="date"></div>
+      <div><label for="venueFilter">Venue</label><select id="venueFilter"><option value="">All venues</option></select></div>
+      <button class="btn btn-outline" id="clearBtn" type="button">Clear</button>
+    </div>
+    <div class="grid" id="eventList"><div class="empty">Loading events...</div></div>
+  </main>
+  <div id="footer"></div>
+  <script src="js/main.js"></script>
+  <script src="js/events.js"></script>
+  <script src="js/registration.js"></script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Events - EventEase</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="manage-events">
+  <div id="navbar"></div>
+  <main class="container">
+    <div id="msg"></div>
+    <h1>Manage Events</h1>
+    <p style="margin-bottom:16px"><a class="btn btn-outline btn-small" href="admin-dashboard.html">Dashboard</a> <a class="btn btn-outline btn-small" href="manage-events.html">Events</a> <a class="btn btn-outline btn-small" href="manage-sessions.html">Sessions</a> <a class="btn btn-outline btn-small" href="manage-users.html">Users</a> <a class="btn btn-outline btn-small" href="registrations.html">Registrations</a> <a class="btn btn-outline btn-small" href="reports.html">Reports</a></p>
+    <div class="card form-card wide" style="margin-left:0">
+      <h2 id="formTitle" style="margin-top:0">Create new event</h2>
+      <form id="eventForm">
+        <input type="hidden" id="eventId">
+        <div class="form-row">
+          <div><label for="eName">Event name</label><input id="eName" required maxlength="150"></div>
+          <div><label for="eCategory">Category</label><input id="eCategory" required maxlength="100" list="cats" placeholder="Workshop"><datalist id="cats"><option>Technical</option><option>Workshop</option><option>Seminar</option><option>Business</option><option>Cultural</option><option>Sports</option></datalist></div>
+        </div>
+        <div class="form-row">
+          <div><label for="eDate">Date</label><input id="eDate" type="date" required></div>
+          <div><label for="eStart">Start time</label><input id="eStart" type="time" required></div>
+          <div><label for="eEnd">End time</label><input id="eEnd" type="time" required></div>
+        </div>
+        <div class="form-row">
+          <div><label for="eVenue">Venue</label><input id="eVenue" required maxlength="150"></div>
+          <div><label for="eCapacity">Capacity</label><input id="eCapacity" type="number" min="1" required></div>
+        </div>
+        <label for="eDescription">Description</label>
+        <textarea id="eDescription" rows="3"></textarea>
+        <button class="btn" type="submit">Save event</button>
+        <button class="btn btn-outline" type="button" id="cancelEdit" style="display:none">Cancel edit</button>
+      </form>
+    </div>
+    <h2>All events</h2>
+    <div id="eventTable"></div>
+  </main>
+  <div id="footer"></div>
+  <script src="js/main.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

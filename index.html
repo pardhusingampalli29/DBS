@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EventEase - Discover Events. Register. Attend. Enjoy.</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <div id="navbar"></div>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <h1>Discover Events. Register. Attend. Enjoy.</h1>
+        <p>EventEase lets you find college events, register in seconds, check in with a QR code and share your feedback, all from one place.</p>
+        <a class="btn btn-accent" href="events.html">Browse Events</a>
+        <a class="btn btn-outline" style="color:#fff;border-color:#fff" href="register.html">Create Account</a>
+      </div>
+      <div class="ticket" aria-hidden="true">
+        <div class="ticket-main">
+          <small>Your pass</small>
+          <h3>Tech Fest 2026</h3>
+          <p class="meta">12 Nov 2026, 9:00 AM</p>
+          <p class="meta">JNTUH Convention Centre</p>
+        </div>
+        <div class="ticket-stub">
+          <svg width="64" height="64" viewBox="0 0 8 8" fill="#10222b" shape-rendering="crispEdges">
+            <rect x="0" y="0" width="3" height="3"/><rect x="5" y="0" width="3" height="3"/><rect x="0" y="5" width="3" height="3"/>
+            <rect x="4" y="1" width="1" height="1"/><rect x="4" y="3" width="2" height="1"/><rect x="3" y="5" width="1" height="2"/>
+            <rect x="5" y="5" width="1" height="1"/><rect x="7" y="4" width="1" height="2"/><rect x="5" y="7" width="3" height="1"/>
+          </svg>
+          Scan at entry
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <main class="container">
+    <div id="msg"></div>
+
+    <h2>Upcoming events</h2>
+    <div class="grid" id="upcomingEvents"><div class="empty">Loading events...</div></div>
+    <p style="margin-top:14px"><a class="btn btn-outline" href="events.html">See all events</a></p>
+
+    <h2>Popular sessions</h2>
+    <div class="grid" id="popularSessions"><div class="empty">Loading sessions...</div></div>
+
+    <h2>Everything you need, without standing in a queue</h2>
+    <div class="features">
+      <div class="card feature"><div class="icon">&#128221;</div><h3>Digital Registration</h3><p>Pick an event and register online. No forms on paper.</p></div>
+      <div class="card feature"><div class="icon">&#128241;</div><h3>QR Check-in</h3><p>Every registration gets its own QR code for quick entry.</p></div>
+      <div class="card feature"><div class="icon">&#128197;</div><h3>Event Schedule</h3><p>See session timings, speakers and rooms for your events.</p></div>
+      <div class="card feature"><div class="icon">&#11088;</div><h3>Feedback</h3><p>Rate the events you attended and help organizers improve.</p></div>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+  <script src="js/main.js"></script>
+  <script src="js/events.js"></script>
+  <script src="js/registration.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manage Sessions - EventEase</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="manage-sessions">
+  <div id="navbar"></div>
+  <main class="container">
+    <div id="msg"></div>
+    <h1>Manage Sessions</h1>
+    <p style="margin-bottom:16px"><a class="btn btn-outline btn-small" href="admin-dashboard.html">Dashboard</a> <a class="btn btn-outline btn-small" href="manage-events.html">Events</a> <a class="btn btn-outline btn-small" href="manage-sessions.html">Sessions</a> <a class="btn btn-outline btn-small" href="manage-users.html">Users</a> <a class="btn btn-outline btn-small" href="registrations.html">Registrations</a> <a class="btn btn-outline btn-small" href="reports.html">Reports</a></p>
+    <div class="card form-card wide" style="margin-left:0">
+      <h2 id="formTitle" style="margin-top:0">Create new session</h2>
+      <form id="sessionForm">
+        <input type="hidden" id="sessionId">
+        <div class="form-row">
+          <div><label for="sEvent">Event</label><select id="sEvent" required></select></div>
+          <div><label for="sTitle">Session title</label><input id="sTitle" required maxlength="150"></div>
+        </div>
+        <div class="form-row">
+          <div><label for="sSpeaker">Speaker</label><input id="sSpeaker" maxlength="100"></div>
+          <div><label for="sRoom">Room</label><input id="sRoom" maxlength="100"></div>
+        </div>
+        <div class="form-row">
+          <div><label for="sStart">Start time</label><input id="sStart" type="time" required></div>
+          <div><label for="sEnd">End time</label><input id="sEnd" type="time" required></div>
+        </div>
+        <button class="btn" type="submit">Save session</button>
+        <button class="btn btn-outline" type="button" id="cancelEdit" style="display:none">Cancel edit</button>
+      </form>
+    </div>
+    <h2>All sessions</h2>
+    <div id="sessionTable"></div>
+  </main>
+  <div id="footer"></div>
+  <script src="js/main.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>

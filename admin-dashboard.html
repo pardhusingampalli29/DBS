@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard - EventEase</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="admin-dashboard">
+  <div id="navbar"></div>
+  <main class="container">
+    <div id="msg"></div>
+    <h1>Admin Dashboard</h1>
+    <p style="margin-bottom:16px"><a class="btn btn-outline btn-small" href="admin-dashboard.html">Dashboard</a> <a class="btn btn-outline btn-small" href="manage-events.html">Events</a> <a class="btn btn-outline btn-small" href="manage-sessions.html">Sessions</a> <a class="btn btn-outline btn-small" href="manage-users.html">Users</a> <a class="btn btn-outline btn-small" href="registrations.html">Registrations</a> <a class="btn btn-outline btn-small" href="reports.html">Reports</a></p>
+    <div class="grid-stats" id="stats"></div>
+
+    <h2>Send a notification</h2>
+    <div class="card form-card wide" style="margin-left:0">
+      <form id="notifyForm">
+        <div class="form-row">
+          <div><label for="nUser">Send to</label><select id="nUser"></select></div>
+          <div><label for="nTitle">Title</label><input id="nTitle" type="text" required maxlength="150" placeholder="Workshop reminder"></div>
+        </div>
+        <label for="nMessage">Message</label>
+        <textarea id="nMessage" rows="3" required placeholder="Workshop starts tomorrow at 10:00 AM."></textarea>
+        <button class="btn" type="submit">Send notification</button>
+      </form>
+    </div>
+  </main>
+  <div id="footer"></div>
+  <script src="js/main.js"></script>
+  <script src="js/admin.js"></script>
+</body>
+</html>
